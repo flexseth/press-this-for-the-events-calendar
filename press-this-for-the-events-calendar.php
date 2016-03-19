@@ -8,14 +8,14 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              http://flexperception.com
+ * @link              http://flexperception.com/code/custom-plugin-press-events-calendar
  * @since             1.0.0
  * @package           Press_This_For_The_Events_Calendar
  *
  * @wordpress-plugin
  * Plugin Name:       Press This for The Events Calendar 
  * Plugin URI:        http://flexperception.com/code/custom-plugin-press-events-calendar
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       Modify the Press This bookmarklet to be able to easily post Event types, which will allow you to easily add Events to The Events Calendar.
  * Version:           1.0.0
  * Author:            Seth Miller
  * Author URI:        http://flexperception.com
@@ -73,3 +73,19 @@ function run_press_this_for_the_events_calendar() {
 
 }
 run_press_this_for_the_events_calendar();
+
+/**
+ * Plugin Name: Custom Press-This Post Type
+ * Plugin URI:  http://wordpress.stackexchange.com/a/192065/26350
+ */
+add_action( 'wp_ajax_press-this-save-post', function()
+{
+    add_filter( 'wp_insert_post_data', function( $data )
+    {
+        if( isset( $data['post_type'] ) && 'post' === $data['post_type'] )
+            $data['post_type'] = 'tribe_events'; // <-- Edit this to your needs!
+
+        return $data;
+    }, PHP_INT_MAX );
+
+}, 0 );

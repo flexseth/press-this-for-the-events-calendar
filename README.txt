@@ -1,4 +1,5 @@
 === Plugin Name ===
+Plugin Name: Press This for The Events Calendar 
 Contributors: snoozeulose
 Donate link: http://flexperception.com
 Tags: the events calendar, event management, workflow, Press This, bookmarklet

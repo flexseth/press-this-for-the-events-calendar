@@ -28,3 +28,10 @@ Yes! Please go to flexperception.com and you can contact me.
 = Is this software open source =
 
 of course it is. If you want to support and need help, hire a developer.
+
+= Does this work for other custom post types = 
+
+yup! Just change the line that says 
+$data['post_type'] = 'tribe_events'; 
+
+replacing tribe_events with your custom post type name.

@@ -83,7 +83,7 @@ add_action( 'wp_ajax_press-this-save-post', function()
     add_filter( 'wp_insert_post_data', function( $data )
     {
         if( isset( $data['post_type'] ) && 'post' === $data['post_type'] )
-            $data['post_type'] = 'tribe_events'; // <-- Edit this to your needs!
+            $data['post_type'] = 'tribe_events';
 
         return $data;
     }, PHP_INT_MAX );

@@ -1,6 +1,6 @@
 === Plugin Name ===
 Plugin Name: Press This for The Events Calendar 
-Contributors: snoozeulose
+Contributors: flexseth
 Donate link: http://flexperception.com
 Tags: the events calendar, event management, workflow, Press This, bookmarklet
 Requires at least: 3.0.1
@@ -12,7 +12,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Modify the Press This bookmarklet to be able to easily post Event types, which will allow you to easily add Events to The Events Calendar, a calendar plugin by Modern Tribe.
 
 == Description ==
-Use this plugin to easily add events to your website powered by Genesis framework and The Events Calendar plugin by Modern Tribe. 
+Use this plugin to easily add events to your event calendar that uses The Events Calendar plugin by Modern Tribe. 
 
 == Installation ==
 
